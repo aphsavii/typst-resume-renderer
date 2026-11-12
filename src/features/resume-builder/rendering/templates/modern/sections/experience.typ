@@ -25,6 +25,8 @@
           end-date: endDate,
         ),
       )
+      #let techs = get-value(exp, "technologies", default: ())
+      #if type(techs) == array and techs.len() > 0 [#linebreak()#emph[#techs.join(", ")]]
       #let hls = get-value(exp, "highlights", default: ())
       #if type(hls) == array [
         #for point in hls [

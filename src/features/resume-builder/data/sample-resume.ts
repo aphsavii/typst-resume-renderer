@@ -80,7 +80,7 @@ export const SAMPLE_RESUME: Resume = {
     },
     {
       category: "Cloud & DevOps",
-      items: ["AWS (S3, EC2, ECS)", "Docker", "Kubernetes", "PostgreSQL", "Redis", "CI/CD (GitHub Actions)"]
+      items: ["AWS (S3 / EC2 / ECS)", "Docker", "Kubernetes", "PostgreSQL", "Redis", "CI/CD (GitHub Actions)"]
     }
   ],
   experience: [

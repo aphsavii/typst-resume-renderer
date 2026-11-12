@@ -74,7 +74,8 @@ Keys: `matchora.resumes.v1`, `matchora.activeResume.v1`.
 - Strict TypeScript. Avoid `any`; narrow `unknown` instead.
 - Named exports for components, hooks, and helpers. Only page modules may default-export.
 - The resume type is inferred from Zod schemas in `types/resume.ts`. Never hand-write a parallel interface.
-- Do not store derived data in state; compute it during render.
+- Do not store derived data in state; compute it during render — **except** free-text fields over a `string[]` (skills, technologies). Those must use `CommaSeparatedInput`, which keeps the typed text locally. Binding `<input value={items.join(", ")}>` and re-splitting on change normalises the text under the caret: typed spaces vanish and edits in the middle jump to the end.
+- Bullet lists (experience, projects, leadership) are edited with `BulletListEditor`. Pasting several lines into one bullet is split by `utils/bullets.ts` into one bullet per line — bullet glyphs and blank lines are stripped — while a single-line paste keeps the native behaviour.
 
 ## Adding a new resume section
 
