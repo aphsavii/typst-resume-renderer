@@ -1,0 +1,10 @@
+#import "sections/summary.typ": summary-section
+#import "sections/skills.typ": skills-section
+#import "sections/experience.typ": experience-section
+#import "sections/projects.typ": projects-section
+#import "sections/education.typ": education-section
+#import "sections/certifications.typ": certifications-section
+#import "sections/achievements.typ": achievements-section
+#import "sections/leadership.typ": leadership-section
+#import "sections/publications.typ": publications-section
+#import "sections/custom.typ": custom-section
